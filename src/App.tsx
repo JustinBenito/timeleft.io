@@ -8,6 +8,7 @@ import YearlyDotsGrid from './components/YearlyDotsGrid';
 import GoalTracker from './components/GoalTracker';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import GitHubButton from './components/GithubButton';
+import logo from "./public/timeleft.png"
 
 interface Goal {
   id: string;
@@ -42,8 +43,8 @@ function App() {
       {/* Header */}
       <header className="flex justify-between items-center pt-1  pb-4 pr-4">
         <div className='flex flex-row gap-2 justify-center items-center'>
-        <img src="/timeleft.png" alt="timeleft app logo with a moon phasing out image" className='rounded-lg w-8 h-8' />
-        <h1 className="font-bricolage items-center justify-center text-lg font-regular">time<span className='text-rose-500'>left</span>.io</h1>
+        <img src={logo} alt="timeleft app logo with a moon phasing out image" className='rounded-lg w-8 h-8' />
+        <h1 className="font-bricolage items-center justify-center text-lg font-regular">no<span className='text-rose-500'>time</span>.lol</h1>
         </div>
         <GitHubButton />
       </header>

@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import githubIcon from '../../public/githubIcon.svg';
+import githubIcon from '../public/githubIcon.svg';
 
 const GitHubButton = () => {
   const [stars, setStarCount] = useState<number | null>(null);
