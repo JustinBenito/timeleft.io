@@ -27,6 +27,10 @@ const DaysLeftWeek: React.FC = () => {
               index <= currentDay 
                 ? 'bg-gray-400 opacity-20' 
                 : 'bg-white'
+            } ${
+              index == currentDay 
+                ? 'bg-rose-500 opacity-100' 
+                : 'bg-white'
             }`}
           />
         ))}

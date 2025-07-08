@@ -107,8 +107,11 @@ const DotMatrixClock: React.FC = () => {
             <div
               key={`${rowIndex}-${colIndex}`}
               className={`w-2 h-2 md:w-4 md:h-4 rounded-full transition-all duration-100 ${
-                dot ? 'bg-white' : 'bg-gray-400 opacity-20'
-              }`}
+                dot
+                  ? (char === ':' ? 'bg-rose-500' : 'bg-white')
+                  : 'bg-gray-400 opacity-20'
+              }
+              `}
             />
           ))
         )}

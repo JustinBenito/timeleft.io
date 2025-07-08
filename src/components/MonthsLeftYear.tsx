@@ -94,7 +94,7 @@ const MonthsLeftYear: React.FC = () => {
               {/* Month abbreviation */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <span
-                  className={`text-xs font-medium transform -rotate-90 whitespace-nowrap select-none ${month.status === 'completed' ? 'text-gray-200' : 'text-gray-400'}`}
+                  className={`text-xs font-medium transform -rotate-90 whitespace-nowrap select-none ${month.status === 'completed' ? 'text-gray-200' : 'text-gray-400'} ${month.status === 'current' ? 'text-rose-500' : 'text-gray-400'}`}
                   style={{ fontSize: '10px', letterSpacing: '0.5px' }}
                 >
                   {month.abbreviation}

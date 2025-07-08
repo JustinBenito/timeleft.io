@@ -125,7 +125,7 @@ const GoalTracker: React.FC<GoalTrackerProps> = ({
           onClick={() => setIsAddingGoal(true)}
           className="flex items-center space-x-2 w-full p-3 border-2 border-dashed border-gray-600 rounded-lg hover:border-gray-500 transition-colors"
         >
-          <Plus size={16} className="text-white" />
+          <Plus size={16} className="text-rose-500" />
           <span className="text-white text-sm">Add new goal</span>
         </button>
       )}
