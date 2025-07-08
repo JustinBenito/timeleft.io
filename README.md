@@ -1,5 +1,7 @@
 # timeleft.io
 
+![alt text](src/assets/timeleft_productimage.png)
+
 ## Overview
 
 timeleft.io is a time visualization dashboard built with React, TypeScript, Tailwind CSS, and Vite. It helps you track how much time is left in your day, week, month, and year using beautiful, interactive visualizations. You can also set and track personal goals for specific days, making it a practical tool for motivation and planning.
