@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+@media (min-width: 900px) {
+  html, body {
     overflow: hidden;
     height: 100%;
   }
+}
