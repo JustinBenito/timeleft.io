@@ -84,7 +84,7 @@ const MotivationalMetrics: React.FC = () => {
       
       <div className="flex items-center space-x-2">
         <span className="font-bold text-rose-500 text-sm">{formatNumber(metrics.secondsLeft)}</span>
-        <span className="text-white text-sm">Seconds left to be happy this year</span>
+        <span className="text-white text-sm">Seconds left to be happy</span>
         <span className="text-blue-400 text-sm">⏱️</span>
         <span className="text-gray-400 text-sm ml-auto"></span>
       </div>
