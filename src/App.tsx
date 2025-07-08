@@ -40,7 +40,7 @@ function App() {
     <div className="flex overflow-hidden flex-col min-h-screen bg-black text-white p-4">
       {/* Header */}
       <header className="flex justify-start items-center gap-2 pt-4 pb-4 pr-4">
-        <img src="src/assets/timeleft.png" alt="timeleft app logo with a moon phasing out image" className='rounded-lg w-8 h-8' />
+        <img src="/timeleft.png" alt="timeleft app logo with a moon phasing out image" className='rounded-lg w-8 h-8' />
         <h1 className="font-bricolage text-lg font-regular">time<span className='text-rose-500'>left</span>.io</h1>
       </header>
 
