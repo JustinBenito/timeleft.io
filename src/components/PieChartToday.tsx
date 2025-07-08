@@ -21,7 +21,7 @@ const PieChartToday: React.FC = () => {
   const cx = 70;
   const cy = 70;
   const r = 65;
-  const pointerRadius = 55;
+  const pointerRadius = 65;
   const svgSize = 140;
 
   // Arc calculations
@@ -47,11 +47,11 @@ const PieChartToday: React.FC = () => {
   const pointerRadians = (pointerAngle * Math.PI) / 180;
   const pointerX = cx + pointerRadius * Math.cos(pointerRadians);
   const pointerY = cy + pointerRadius * Math.sin(pointerRadians);
-  const pointerPoints = [
-    `${pointerX},${pointerY - 4}`,
-    `${pointerX + 3},${pointerY + 2}`,
-    `${pointerX - 3},${pointerY + 2}`
-  ].join(' ');
+  // const pointerPoints = [
+  //   `${pointerX},${pointerY - 4}`,
+  //   `${pointerX + 3},${pointerY + 2}`,
+  //   `${pointerX - 3},${pointerY + 2}`
+  // ].join(' ');
 
   return (
     <div className="flex flex-col items-center justify-center p-6 h-full">
@@ -74,10 +74,15 @@ const PieChartToday: React.FC = () => {
             />
           )}
           {/* Pointer triangle */}
-          <polygon
-            points={pointerPoints}
-            fill="#1F2123"
-            style={{ transition: 'points 0.5s ease-out' }}
+          <line
+            x1={cx}
+            y1={cy}
+            x2={pointerX}
+            y2={pointerY}
+            stroke="#FF2058"
+            strokeWidth={2}
+            strokeLinecap="round"
+            style={{ transition: 'x2 0.5s, y2 0.5s' }}
           />
         </svg>
       </div>
