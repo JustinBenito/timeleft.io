@@ -25,7 +25,7 @@ const DaysLeftWeek: React.FC = () => {
             key={day}
             className={`w-32 h-3 rounded-full transition-all duration-300 ${
               index <= currentDay 
-                ? 'bg-gray-400 opacity-20' 
+                ? 'bg-[#1F2123]' 
                 : 'bg-white'
             } ${
               index == currentDay 
