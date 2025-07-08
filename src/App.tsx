@@ -7,6 +7,7 @@ import DotMatrixClock from './components/DotMatrixClock';
 import YearlyDotsGrid from './components/YearlyDotsGrid';
 import GoalTracker from './components/GoalTracker';
 import { useLocalStorage } from './hooks/useLocalStorage';
+import { Analytics } from "@vercel/analytics/next"
 
 interface Goal {
   id: string;
@@ -36,6 +37,7 @@ function App() {
   };
 
   return (
+    <>
     <div className="flex overflow-hidden flex-col min-h-screen bg-black text-white p-4">
       {/* Header */}
       <header className="flex justify-between items-center p-4">
@@ -96,6 +98,8 @@ function App() {
         </div>
       </footer>
     </div>
+    <Analytics />
+    </>
   );
 }
 
