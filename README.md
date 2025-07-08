@@ -17,12 +17,13 @@ timeleft.io is a time visualization dashboard built with React, TypeScript, Tail
 - Persistent storage of goals using localStorage
 - Responsive, modern UI with custom font and color themes
 
-## Installation
+## Contributing ?
+
+0. Fork this repository
 
 1. Clone the repository:
    ```bash
-   git clone <your-repo-url>
-   cd timeleft
+   git clone https://github.com/<youruserid>/timeleft.io.git
    ```
 2. Install dependencies:
    ```bash
@@ -221,4 +222,4 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
 
 ## License
 
-This project is open source and available under the MIT License.
+This project is open source and available under the GPL License.
