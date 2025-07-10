@@ -1,10 +1,10 @@
-# timeleft.io
+# notime.lol
 
 ![alt text](src/assets/timeleft_productimage.png)
 
 ## Overview
 
-timeleft.io is a time visualization dashboard built with React, TypeScript, Tailwind CSS, and Vite. It helps you track how much time is left in your day, week, month, and year using beautiful, interactive visualizations. You can also set and track personal goals for specific days, making it a practical tool for motivation and planning.
+notime.lol is a time visualization dashboard built with React, TypeScript, Tailwind CSS, and Vite. It helps you track how much time is left in your day, week, month, and year using beautiful, interactive visualizations. You can also set and track personal goals for specific days, making it a practical tool for motivation and planning.
 
 ## Features
 
@@ -23,7 +23,7 @@ timeleft.io is a time visualization dashboard built with React, TypeScript, Tail
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<youruserid>/timeleft.io.git
+   git clone https://github.com/<youruserid>/notime.lol.git
    ```
 2. Install dependencies:
    ```bash
@@ -44,7 +44,7 @@ timeleft.io is a time visualization dashboard built with React, TypeScript, Tail
 ## Project Structure
 
 ```
-timeleft/
+notime.lol/
   ├── src/
   │   ├── components/
   │   │   ├── PieChartToday.tsx

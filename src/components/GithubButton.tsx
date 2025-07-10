@@ -4,7 +4,7 @@ import githubIcon from '../public/githubIcon.svg';
 
 const GitHubButton = () => {
   const [stars, setStarCount] = useState<number | null>(null);
-  const repoUrl = `https://github.com/justinbenito/timeleft.io`;
+  const repoUrl = `https://github.com/justinbenito/notime.lol`;
 
   useEffect(() => {
     fetchStars();
@@ -12,7 +12,7 @@ const GitHubButton = () => {
 
   const fetchStars = async () => {
     try {
-      const response = await fetch(`https://api.github.com/repos/justinbenito/timeleft.io`);
+      const response = await fetch(`https://api.github.com/repos/justinbenito/notime.lol`);
       if (!response.ok) {
         throw new Error('Failed to fetch repository data');
       }
