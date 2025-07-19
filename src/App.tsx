@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PieChartToday from './components/PieChartToday';
 import DaysLeftWeek from './components/DaysLeftWeek';
 import MonthsLeftYear from './components/MonthsLeftYear';
@@ -38,50 +38,49 @@ function App() {
   };
 
   return (
-
-    <div className="flex overflow-hidden flex-col min-h-screen bg-black text-white p-4">
+    <div className="flex overflow-hidden flex-col h-screen bg-black text-white p-2 sm:p-3">
       {/* Header */}
-      <header className="flex justify-between items-center pt-1  pb-4 pr-4">
+      <header className="flex justify-between items-center pb-2 pr-2 sm:pr-4 flex-shrink-0">
         <div className='flex flex-row gap-2 justify-center items-center'>
-        <img src={logo} alt="notime app logo with a moon phasing out image" className='rounded-lg w-8 h-8' />
-        <h1 className="font-bricolage items-center justify-center text-lg font-regular">no<span className='text-rose-500'>time</span>.lol</h1>
+          <img src={logo} alt="notime app logo with a moon phasing out image" className='rounded-lg w-6 h-6 sm:w-8 sm:h-8' />
+          <h1 className="font-bricolage items-center justify-center text-base sm:text-lg font-regular">no<span className='text-rose-500'>time</span>.lol</h1>
         </div>
         <GitHubButton />
       </header>
 
       {/* Main Grid - fills available space */}
-      <div className="flex-1 flex flex-col">
-        <div className="flex-1 grid grid-cols-1 lg:grid-cols-12 gap-y-0">
+      <div className="flex-1 flex flex-col min-h-0 overflow-y-auto lg:overflow-y-hidden">
+        <div className=" flex flex-col gap-y-0 h-full">
           {/* Top Row - Time Visualization */}
-          <div className="flex-1 lg:col-span-12 grid grid-cols-1 md:grid-cols-3">
-            <div className="border-2 border-b-0 md:border-r-0 border-dashed border-gray-700 h-full">
+          <div className="lg:col-span-12 flex flex-col sm:flex-row h-fit">
+            <div className="border-2 border-b-0 sm:border-r-0 py-3 border-dashed border-gray-700 overflow-hidden w-full sm:w-1/3">
               <PieChartToday />
             </div>
-            <div className="border-2 border-b-0 md:border-r-0 border-dashed border-gray-700 h-full">
+            <div className="border-2 border-b-0 sm:border-r-0 py-3 border-dashed border-gray-700 overflow-hidden w-full sm:w-1/3">
               <DaysLeftWeek />
             </div>
-            <div className="border-2 border-b-0 border-dashed border-gray-700 h-full">
+            <div className="border-2 border-b-0 py-3 border-dashed border-gray-700 overflow-hidden h-1/3 sm:h-full w-full sm:w-1/3">
               <MonthsLeftYear />
             </div>
           </div>
           {/* Middle Row - Metrics and Clock */}
-          <div className="flex-1 lg:col-span-12 grid grid-cols-1 md:grid-cols-2">
-            <div className="border-2 border-b-0 md:border-r-0 border-dashed border-gray-700 h-full">
+          <div className="lg:col-span-12 flex flex-col sm:flex-row">
+            <div className="border-2 border-b-0 sm:border-r-0 border-dashed border-gray-700 h-fit overflow-hidden w-full sm:w-1/2">
               <MotivationalMetrics />
             </div>
-            <div className="border-2 border-b-0 border-dashed border-gray-700 h-full">
+            <div className="border-2 border-b-0 border-dashed border-gray-700 overflow-hidden w-full sm:w-1/2">
               <DotMatrixClock />
             </div>
           </div>
           {/* Bottom Row - Year Grid and Goals */}
-          <div className="flex-1 lg:col-span-12 grid grid-cols-1 md:grid-cols-2">
-            <div className="border-2 border-b-0 md:border-b-2 md:border-r-0 border-dashed border-gray-700 h-full">
+          <div className="lg:col-span-12 flex flex-col sm:flex-row h-fit">
+            <div className="border-2 border-b-0 sm:border-b-2 sm:border-r-0 border-dashed h-full border-gray-700 pb-7 w-full sm:w-1/2 overflow-hidden ">
               <YearlyDotsGrid 
                 goals={goals} 
                 onDayClick={handleDayClick}
               />
             </div>
-            <div className="border-2 border-dashed border-gray-700 h-full">
+            <div className="border-2 border-dashed border-gray-700 overflow-hidden h-full w-full sm:w-1/2">
               <GoalTracker 
                 goals={goals}
                 onGoalAdd={handleGoalAdd}
@@ -94,16 +93,15 @@ function App() {
       </div>
 
       {/* Footer */}
-      <footer className='flex w-full flex-col items-center justify-center px-4 py-4 text-white md:px-8 lg:px-16'>
+      <footer className='flex w-full flex-col items-center justify-center px-2 py-2 text-white  sm:px-4 md:px-8 lg:px-16 flex-shrink-0'>
         <div className='text-center'>
-          <div>
+          <div className="text-sm sm:text-base">
             Made with 🩵 by
             <a href='https://www.linkedin.com/in/justinbenito/' className='ml-2 text-[#b5f4ff]'>Justin Benito</a>
           </div>
         </div>
       </footer>
     </div>
-
   );
 }
 

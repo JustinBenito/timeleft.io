@@ -75,7 +75,7 @@ const MonthsLeftYear: React.FC = () => {
   const getRemainingMonths = () => months.filter(m => m.status === 'remaining').length;
 
   return (
-    <div className="w-full h-full bg-black rounded-xl p-4 gap-4 flex flex-col justify-between">
+    <div className="w-full h-full bg-black rounded-xl p-2 gap-2 flex flex-col justify-between">
       <div className="flex-1 flex items-center gap-1  justify-between">
         {months.map((month, index) => (
           <div

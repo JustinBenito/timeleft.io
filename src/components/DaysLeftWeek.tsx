@@ -18,7 +18,7 @@ const DaysLeftWeek: React.FC = () => {
   const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
   return (
-    <div className="flex flex-col items-center justify-center p-6 h-full">
+    <div className="flex flex-col items-center justify-center p-4 h-full">
       <div className="space-y-2 mb-2">
         {days.map((day, index) => (
           <div
